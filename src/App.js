@@ -9,7 +9,7 @@ function App() {
 
   function generateMBI()
   {
-    fetch('http://localhost:5000/generate', {
+    fetch('https://wramos-mbi-backend.herokuapp.com:5000/generate', {
       mode: 'cors',
       method: 'GET'
     })
@@ -20,7 +20,7 @@ function App() {
 
   function verifyMBI(event)
   {
-    fetch('http://localhost:5000/verify', {
+    fetch('https://wramos-mbi-backend.herokuapp.com:5000/verify', {
       mode: 'cors',
       method: 'POST',
       headers: {'Content-Type':'application/json'},
